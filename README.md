@@ -48,7 +48,7 @@ MAMA is a platform designed to connect students with local home cooks, primarily
 
 ## Contact
 If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us:
-- **Email**: [demiana.amged0085@compit.aun.edu.eg](mailto:demiana.amged0085@compit.aun.edu.eg)
+- **Email**: [demianaamgad02@gmail.com](mailto:demianaamgad02@gmai.com)
 - **Phone**: +20 1090825437
 
 ## Acknowledgements
