@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAMA</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="body">
+    <!--header-->
+    <header>
+        <img src="pictures/logo.png" alt="logo" class = "logo-img">
+        <h1>MAMA - Homemade Food for Students</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="mothers.html">Mothers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="login-link"><i class="fas fa-user"></i> Login</a>        
+    </header>
 
+    <!--main-->
+    <main>
+        <!-- home Section -->
+        <section class="home">
+            <h2>Welcome to MAMA!!!</h2>
+            <p>Get delicious homemade food made with love by loving mothers.</p>
+            <a href="mothers.html" class="button">Look at our mothers!</a>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <h2>Why Choose MAMA?</h2>
+            <ul>
+                <li>Convenient homemade meals</li>
+                <li>Wide variety of cuisines</li>
+                <li>Quality ingredients</li>
+                <li>Easy ordering process</li>
+            </ul>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h2>Sample of Our Delicious Dishes</h2>
+            <div class="gallery-container">
+                <img src="pictures/dish1.jpeg" alt="Dish 1" data-id="1">
+                <img src="pictures/dish2.jpeg" alt="Dish 2" data-id="2">
+                <img src="pictures/dish3.jpeg" alt="Dish 3" data-id="3">
+            </div>
+
+            <!-- Modal structure -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="motherName"></h2>
+                <p id="motherSpecialty"></p>
+                <p id="motherRating"></p>
+                <h2>We are excited for you to try!!!</h2>
+            </div>
+        </section>
+
+        <!-- Feedbacks Section -->
+        <section class="feedbacks">
+            <h2>What Our Customers Say</h2>
+            <div class="feedbacks">
+                <p>"MAMA's food is amazing! It's like having a home-cooked meal every day." - Sarah</p>
+            </div>
+            <div class="feedbacks">
+                <p>"Convenient and delicious. Perfect for busy students!" - John</p>
+            </div>
+            <div class="feedbacks">
+                <p>"The variety and quality are top-notch. Highly recommend!" - Emma</p>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="cta" style="margin-bottom: 70px;">
+            <h2>Would you like to try by yourself?</h2>
+            <p>Get started by browsing our selection of homemade meals.</p>
+            <a href="order.html" class="button" ><i class="fas fa-shopping-cart"></i> Order Now</a>
+        </section>
+    </main>
+    
+    <!--footer-->
+    <footer>
+        <p>&copy; 2024 MAMA - Homemade Food especially for Students</p>
+    </footer>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
