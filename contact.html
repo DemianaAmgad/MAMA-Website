@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MAMA</title>
+    <link rel="stylesheet" href="styles/main.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="body">
+    <!--header-->
+    <header>
+        <img src="pictures/logo.png" alt="logo" class="logo-img">
+        <h1>MAMA - Homemade Food for Students</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="mothers.html">Mothers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="login-link"><i class="fas fa-user"></i> Login</a>        
+    </header>
+    <!--main-->
+    <main>
+        <h2 style="text-align: center;">Contact Us</h2>
+        <form id="contactForm" action="#">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" >
+                <small  id="nameError" style="color: red;"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+                <small  id="emailError" style="color: red;"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" ></textarea>
+                <small id="messageError" style="color: red;"></small>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="login-button">Send Message</button>
+            </div>
+        </form>
+        <p id="successMessage" style="display:none; color:green; text-align: center;">Thank you for your message! We will get back to you soon.</p>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <p>&copy; 2024 MAMA - Homemade Food especially for Students</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

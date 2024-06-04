@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAMA - Homemade Food for Students</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <img src="pictures/logo.png" alt="logo" class="logo-img">
+        <h1>MAMA - Homemade Food for Students</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="mothers.html">Mothers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="login-link"><i class="fas fa-user"></i> Login</a>
+    </header>
+    
+    <!--main-->
+    <main>
+        <section class="profiles" style="margin-bottom: 70px;">
+            <h2>Mothers' Profiles</h2>
+            <!---------------------------------------------------------------------------------------->
+            <div class="profile" data-profile-id="1">
+                <img src="pictures/mother1.jpeg" alt="Mother 1" class="special-mother-image">
+                <div class="profile-info">
+                    <h3>Mother 1</h3>
+                    <p>Specialty: Italian cuisine</p>
+                    <p>Rating: 4.5/5</p>
+                    <button class="profile-button" data-profile-id="1">View Profile</button>
+                </div>
+            </div>
+            <!---------------------------------------------------------------------------------------->
+            <div class="profile" data-profile-id="2">
+                <img src="pictures/mother2.jpeg" alt="Mother 2" class="special-mother-image">
+                <div class="profile-info">
+                    <h3>Mother 2</h3>
+                    <p>Specialty: Indian cuisine</p>
+                    <p>Rating: 4.8/5</p>
+                    <button class="profile-button" data-profile-id="2">View Profile</button>
+                </div>
+            </div>            
+            <!---------------------------------------------------------------------------------------->
+            <div class="profile" data-profile-id="3">
+                <img src="pictures/mother3.jpeg" alt="Mother 3" class="special-mother-image">
+                <div class="profile-info">
+                    <h3>Mother 3</h3>
+                    <p>Specialty: Egyptian cuisine</p>
+                    <p>Rating: 4.3/5</p>
+                    <button class="profile-button" data-profile-id="3">View Profile</button>
+                </div>
+            </div>
+            <!---------------------------------------------------------------------------------------->
+            <!-- Modal structure -->
+            <div id="profileModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 id="modalName"></h2>
+                    <p id="modalSpecialty"></p>
+                    <p id="modalRating"></p>
+                    <p id="modalDescription"></p>
+                    <p id="modalDishes"></p>
+                    <img id="modalImage" src="" alt="Profile Image" class="modal-image">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <p>&copy; 2024 MAMA - Homemade Food for Students</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

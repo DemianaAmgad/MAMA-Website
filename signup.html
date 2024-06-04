@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MAMA</title>
+    <link rel="stylesheet" href="styles/main.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="body">
+    <!--header-->
+    <header>
+        <img src="pictures/logo.png" alt="logo" class="logo-img">
+        <h1>MAMA - Homemade Food for Students</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="mothers.html">Mothers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="login-link"><i class="fas fa-user"></i> Login</a>        
+    </header>
+    
+    <!--main-->
+    <main>
+        <div class="login-container">
+            <h2 style="text-align: center;">Sign Up for MAMA</h2>
+            <form id ="signupForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" >
+                    <small id="usernameError" style="color: red;"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" >
+                    <small id="emailError" style="color: red;"></small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" >
+                    <small id="passwordError" style="color: red;"></small>
+                </div>
+                <div>
+                    <label> choose your role </label>
+                    <input type="radio" id="role-mother" name="role" value="mother">
+                    <label for="role-mother">Mother</label>
+                    <input type="radio" id="role-student" name="role" value="student">
+                    <label for="role-student">Student</label>
+                    <small id="roleMotherError" style="color: red;"></small>
+                </div>           
+                <a href = "index.html"> <button type="submit" class="login-button">Sign Up</button> </a>
+                Already have an account? <a href="login.html">Login here</a>
+            </form>
+            <p id="successMessage" style="display:none; color:green; text-align: center;">Signed up successfully!</p>
+        </div>
+    </main>
+  <!--footer-->
+    <footer>
+        <p>&copy; 2024 MAMA - Homemade Food especially for Students</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

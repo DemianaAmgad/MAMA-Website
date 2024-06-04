@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MAMA</title>
+    <link rel="stylesheet" href="styles/main.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="body">
+    <!--header-->
+    <header>
+        <img src="pictures/logo.png" alt="logo" class="logo-img">
+        <h1>MAMA - Homemade Food for Students</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="mothers.html">Mothers</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="login-link"><i class="fas fa-user"></i> Login</a>        
+    </header>
+    
+    <!--main-->
+    <main>
+        <div class="login-container">
+            <h2 style="text-align: center;">Login to MAMA</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <p style="text-align: center;">Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <p>&copy; 2024 MAMA - Homemade Food especially for Students</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
